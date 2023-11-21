@@ -10,12 +10,11 @@ import ru.netology.delivery.data.DataGenerator;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.$$;
 
 public class CardApplicationPositiveTest {
-//    static {
-//        Configuration.headless = true;
-//    }
+    static {
+        Configuration.headless = true;
+    }
 
     @BeforeEach
     void setUp() {
