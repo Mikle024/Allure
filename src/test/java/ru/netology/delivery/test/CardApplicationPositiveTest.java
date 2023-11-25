@@ -61,9 +61,7 @@ public class CardApplicationPositiveTest {
 
         $("[data-test-id='replan-notification'] .notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldBe(Condition.exactText("У вас уже запланирована встреча на другую дату. Перепланировать?\n" +
-                        "\n" +
-                        "Перепланировать"));
+                .shouldBe(Condition.text("У вас уже запланирована встреча на другую дату. Перепланировать?"));
 
         $("[data-test-id='replan-notification'] .button__content").click();
         $("[data-test-id='success-notification'] .notification__content")
